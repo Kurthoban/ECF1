@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BaiDez</title>
+</head>
+
+<body>
+    <nav id="imagenav" class="navbar">
+        <a href="./index.html">
+        <div class="brand-title"><img src="./images/Logobaidez.png" href></div></a>
+        <div class="titlem"> <img src="./images/papanier.png" id="logohead"></div></a>
+        <a href="panier.html" class="toggle-button"><img src="./images/panier.png">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="./panier.html"><img src="./images/panier.png" class="png"></a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+
+
+
+    <div class="autrerow">
+        <div class="col-sm-4 col-lg-6">
+            <p id="messageId">
+                <label for="id">Id de l'album :</label>
+                <input type="number" required id="id" value="0" min="0" title="Saisissez un numéro et validez">
+            </p>
+            <p>
+                <label for="serie">Série :</label>
+                <input type="text" id="serie" readonly>
+
+                <label for="numero">Album N° :</label>
+                <input type="text" id="numero" readonly>
+
+                <label for="titre">Titre :</label>
+                <input type="text" id="titre" readonly>
+
+                <label for="auteur">Auteur :</label>
+                <input type="text" id="auteur" readonly>
+            </p>
+            <p>
+                <label for="prix">Prix :</label>
+                <input type="number" id="prix" readonly>
+            </p>
+            <div is="toto">
+                <img src="images/noComicsMini.jpeg" id="albumMini">
+            </div>
+        </div>
+        <div class="col-sm-8 col-lg-6">
+
+            <img src="images/noComics.jpeg" id="album">
+
+        </div>
+
+    </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="data/albums.js"></script>
+    <script src="data/series.js"></script>
+    <script src="data/auteurs.js"></script>
+    <script src="js/modeleBD.js"></script>
+    <script type="text/javascript" src="mobile.js"></script>
+  </body>
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          
+          <div class="meteo">
+              <h6 class="mt">Météo</h6>
+            <div id="city"></div>
+            <div id="temp"></div>
+            <div id="humidity"></div>
+            <div id="wind"></div>
+          </div>
+          <!-- <p class="text-justify"><i> On réinvente pas la roue. </i></br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum commodi facere quasi. Minima dolores cum autem a, animi quasi iure velit provident, quam assumenda facilis adipisci, doloribus laboriosam dolorum et?</p> -->
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a >Bonjour</a></li>
+            <li><a >Eric</a></li>
+            <li><a >ça</a></li>
+            <li><a >mérite</a></li>
+            <li><a >la</a></li>
+            <li><a >validation</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a >Copier</a></li>
+            <li><a >Coller</a></li>
+            <li><a >Copier</a></li>
+            <li><a >Coller</a></li>
+            <li><a >ctrl c + ctrl v</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+       <a>Lucarrémentpasmal</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+</html>
